@@ -89,7 +89,7 @@ def test_analyze_성공(monkeypatch):
         r = client.post('/analyze', json={"review_text":"배송 빨라요!"})            # 2. 서버를 띄운 것처럼 만들기
 
     assert r.status_code == 200     # 정상 응답인가?
-    assert r.json()["setiment"] == "긍정"   # 가짜 분석기가 준 값이 그대로 응답에 담겼는가??
+    assert r.json()["sentiment"] == "긍정"   # 가짜 분석기가 준 값이 그대로 응답에 담겼는가??
 
     # 테스트가 끝나면  monkeypatch가 ReviewAnalyzer를 원래 본 클래스로 자동 복구한다.
     
