@@ -1,0 +1,5 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+실행방법
