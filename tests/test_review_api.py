@@ -1,5 +1,5 @@
 '''
-tests/test_review-api.py
+tests/test_review_api.py
 -------------------------
 
 1. 스키마 테스트 : ReviewRequest / ReviewResponse 검증 규칙
@@ -21,7 +21,7 @@ from fastapi.testclient import TestClient
 from app import main as main_module
 from app.schemas import ReviewRequest
 
-# tests/ 의 상위 폴더(review-api)를 import 경로에 추가해서 'from app....' 동작 가능하게 한다.
+# tests/ 의 상위 폴더(review_api)를 import 경로에 추가해서 'from app....' 동작 가능하게 한다.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 # 테스트 1: 스키마 - 빈 문자열을 거부해야 한다 (단위 테스트)

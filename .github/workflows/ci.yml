@@ -43,12 +43,12 @@ jobs:
           key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
           script: |
             set -e
-            cd ~/review-api
+            cd ~/review_api
             git pull origin main
-            docker build -t review-api .
+            docker build -t review_api .
             docker rm -f review || true
             docker run -d --name review --restart unless-stopped \
-              -p 8005:8005 --env-file .env review-api
+              -p 8005:8005 --env-file .env review_api
             sleep 5
             docker ps
             curl -fsS http://localhost:8005/docs -o /dev/null && echo "서버 정상 응답"

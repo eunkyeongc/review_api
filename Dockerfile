@@ -1,4 +1,4 @@
-# 리뷰 분석 API (review-api)를 위한 Dockerfile
+# 리뷰 분석 API (review_api)를 위한 Dockerfile
 FROM python:3.10-slim
 
 # 컨테이너 안에서 애플리케이션 파일을 배치하고 실행할 기준 위치

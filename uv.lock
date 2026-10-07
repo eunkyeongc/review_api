@@ -783,7 +783,7 @@ wheels = [
 ]
 
 [[package]]
-name = "review-api"
+name = "review_api"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
