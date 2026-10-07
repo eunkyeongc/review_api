@@ -11,7 +11,7 @@ on:
 # 어떤 일이르 할건데?
 jobs: 
   test:
-  # GitHub가 빌려주는 임시 우분투 서버 (끝나면 사라진다.)
+    # GitHub가 빌려주는 임시 우분투 서버 (끝나면 사라진다.)
     runs-on: ubuntu-latest
     steps:
       # 1) 저장소의 코드를 이 임시 서버로 내려받는다.
